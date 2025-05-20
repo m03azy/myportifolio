@@ -16,6 +16,8 @@
     once: true
   });
 </script>
+<script src="https://typebot.co/lead-generation-4u7e0c0"></script>
+
 </head>
 <body>
 
@@ -118,9 +120,41 @@
     </div>
   </section>
 
+  <section id="related-articles">
+    <h3>Related Articles</h3>
+    <ul id="recommendations"></ul>
+    </section>
+
+    <script>
+        const articles = [
+            { title: "5 Tips for a Successful Website Launch", tags: ["launch", "planning", "strategy"], url: "launch.html" },
+            { title: "The Importance of Mobile Optimization", tags: ["mobile", "optimization", "UX"], url: "mobile.html" },
+            { title: "How to Choose the Right Domain Name", tags: ["domain", "branding"], url: "domain.html" }
+        ];
+
+        const currentTags = ["launch"]; // Set this based on the page
+        const related = articles.filter(article => article.tags.some(tag => currentTags.includes(tag)));
+        document.getElementById("recommendations").innerHTML = related.map(a => `<li><a href="${a.url}">${a.title}</a></li>`).join("");
+    </script>
+
+    <!-- Paste in the body or footer -->
+    <script src="https://typebot.io/embed.js" async></script>
+    <typebot-standard id="my-bot-id"></typebot-standard>
+    <iframe
+  src="https://typebot.co/lead-generation-4u7e0c0"
+  style="border: none; width:100%; height: 600px ; margin: 0 auto; display: block;"
+></iframe>
+    <script>
+    const messageBox = document.querySelector("textarea[name='message']");
+    messageBox.addEventListener("input", () => {
+        if (messageBox.value.toLowerCase().includes("need a website")) {
+        messageBox.value += " with fast load time and mobile optimization.";
+        }
+    });
+    </script>
 
   <footer>
-    &copy; 2025 Your Name | Powered with 💻 and ☕
+    &copy; 2025 Mosey | Powered with 💻 and ☕
   </footer>
 
 </body>

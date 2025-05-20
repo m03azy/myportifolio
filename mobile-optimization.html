@@ -113,6 +113,32 @@
     <a href="index.html" class="button">← Back to Home</a>
   </div>
 
+    <section id="related-articles">
+  <h2>Related Articles</h2>
+  <ul id="recommendations"></ul>
+</section>
+
+<script>
+  const allArticles = [
+    { title: "5 Tips for a Successful Website Launch", tags: ["launch", "planning", "strategy"], url: "launch.html" },
+    { title: "The Importance of Mobile Optimization", tags: ["mobile", "optimization", "UX"], url: "mobile.html" },
+    { title: "How to Choose the Right Domain Name", tags: ["domain", "branding", "strategy"], url: "domain.html" }
+  ];
+
+  // Set these based on current article's topic
+  const currentTags = ["launch"]; // e.g., for "launch.html"
+
+  const recommendations = allArticles
+    .filter(article => article.tags.some(tag => currentTags.includes(tag)))
+    .filter(article => !window.location.href.includes(article.url));
+
+  document.getElementById("recommendations").innerHTML =
+    recommendations.length > 0
+      ? recommendations.map(a => `<li><a href="${a.url}">${a.title}</a></li>`).join("")
+      : "<li>No related articles found.</li>";
+</script>
+
+
   <footer>
     &copy; 2025 Your Name | Built for the Mobile Era.
   </footer>
