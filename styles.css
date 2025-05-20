@@ -1,0 +1,195 @@
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f7fafc;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0 0 20px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .btn-primary {
+      background: #ffffff;
+      color: #2c5364;
+      padding: 12px 28px;
+      border-radius: 25px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.3s ease;
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background: #e3f2fd;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .services, .contact-form {
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+      margin-top: 40px;
+    }
+
+    .services h2, .contact-form h2 {
+      margin-top: 0;
+      color: #2c5364;
+    }
+
+    .services p {
+      line-height: 1.6;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-family: inherit;
+      font-size: 1rem;
+    }
+
+    button[type="submit"] {
+      align-self: flex-start;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 20px;
+      background: #e1ecf4;
+      color: #555;
+      margin-top: 60px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .btn-primary {
+        font-size: 1rem;
+        padding: 10px 20px;
+      }
+    }
+
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .portfolio .project {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    }
+    .portfolio img {
+      max-width: 100%;
+      border-radius: 12px;
+    }
+    .portfolio h3 {
+      margin: 10px 0;
+      color: #2c5364;
+    }
+    .portfolio p {
+      color: #555;
+    }
+    .blog {
+      margin-top: 40px;
+    }
+    .blog article {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+      margin-bottom: 20px;
+    }
+    .blog h3 {
+      margin: 0 0 10px;
+      color: #2c5364;
+    }
+    .blog p {
+      color: #555;
+    }
+    .faq {
+      margin-top: 40px;
+    }
+    .faq-item {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+      margin-bottom: 20px;
+    }
+    .faq-item h3 {
+      margin: 0 0 10px;
+      color: #2c5364;
+    }
+    .faq-item p {
+      color: #555;
+    }
+    .testimonials {
+      margin-top: 40px;
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    }
+    .testimonials h2 {
+      margin-top: 0;
+      color: #2c5364;
+    }
+    .testimonials blockquote {
+      margin: 0;
+      padding: 20px;
+      border-left: 4px solid #2c5364;
+      background: #f9f9f9;
+      font-style: italic;
+    }
+    .testimonials blockquote p {
+      margin: 0;
+      color: #555;
+    }
+    .testimonials blockquote cite {
+      display: block;
+      margin-top: 10px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+    .testimonials blockquote cite::before {
+      content: "— ";
+    }
+    .testimonials blockquote cite::after {
+      content: "";
+    }
+    .testimonials blockquote p::after {
+      content: "";
+    }
+    .testimonials blockquote p::before {
+      content: "";
+    }
